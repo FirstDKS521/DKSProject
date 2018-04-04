@@ -1,0 +1,32 @@
+//
+//  PrefixHeader.pch
+//  DKSProject
+//
+//  Created by aDu on 2018/3/13.
+//  Copyright © 2018年 DuKaiShun. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//宏定义
+#import "KeyWordMacros.h"
+#import "PublicMacros.h"
+
+//基础类
+#import "UIViewController+KSNavBarItem.h"
+#import "UIViewController+KSToast.h"
+#import "KSNavigationController.h"
+#import "KSParentController.h"
+#import "KSCheckWordTool.h" //正则表达式
+#import "UIColor+KSColor.h" //颜色分类
+#import "UIView+KSView.h" //UIView分类，视图添加点击方法、找到当前视图的VC
+#import "KSAlertView.h" //弹框
+
+//第三方库
+#import "PPNetworkHelper.h"
+#import <MJRefresh.h>
+#import <Masonry.h>
+#import <YYKit.h>
+
+#endif /* PrefixHeader_pch */
