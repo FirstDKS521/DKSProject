@@ -30,15 +30,8 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-//    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.and.right.and.left.equalTo(self.imgView);
-//        make.bottom.equalTo(self.stateLabel.mas_bottom).offset(10);
-//    }];
-    
     [self.imgView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.and.left.and.right.equalTo(self.contentView);
-//        make.centerX.equalTo(self.contentView.mas_centerX);
-//        make.width.equalTo(self.contentView.mas_width);
         make.height.equalTo(self.imgView.mas_width);
     }];
     

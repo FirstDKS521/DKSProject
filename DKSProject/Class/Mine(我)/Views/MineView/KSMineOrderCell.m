@@ -37,8 +37,14 @@
 - (void)setModel:(KSMineOrderModel *)model {
     if (model) {
         _model = model;
+        [self layoutIfNeeded];
         _imgView.image = [UIImage imageNamed:model.imgName];
         _titleLabel.text = model.title;
+        if (model.newCount > 0) {
+            [_imgView showBadgeWithCount:model.newCount];
+        } else {
+            [_imgView hideBadge];
+        }
     }
 }
 

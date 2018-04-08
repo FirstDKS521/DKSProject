@@ -35,10 +35,14 @@
     self.heightED = 0;
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self.dataSource = @[@{@"title":@"待付款", @"imgName":@"stay_pay"},
-                            @{@"title":@"待发货", @"imgName":@"stay_send"},
-                            @{@"title":@"待收货", @"imgName":@"stay_accept"},
-                            @{@"title":@"待评价", @"imgName":@"stay_comment"}];
+        self.dataSource = @[@{@"title":@"待付款", @"imgName":@"stay_pay",
+                              @"newCount": @2},
+                            @{@"title":@"待发货", @"imgName":@"stay_send",
+                              @"newCount": @0},
+                            @{@"title":@"待收货", @"imgName":@"stay_accept",
+                              @"newCount": @5},
+                            @{@"title":@"待评价", @"imgName":@"stay_comment",
+                              @"newCount": @0}];
         [self.contentView addSubview:self.collectionView];
         self.collectionView.frame = CGRectMake(0, 0, Screen_Width, self.contentView.frame.size.height);
     }
@@ -52,7 +56,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     KSMineOrderCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    [self updateCollectionViewHeight:self.collectionView.collectionViewLayout.collectionViewContentSize.height];
+    [self updateCollectionViewHeight:collectionView.collectionViewLayout.collectionViewContentSize.height];
     KSMineOrderModel *model = [KSMineOrderModel modelWithJSON:self.dataSource[indexPath.row]];
     cell.model = model;
     return cell;
@@ -61,7 +65,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     KSMineOrderCell *cell = (KSMineOrderCell *)[collectionView cellForItemAtIndexPath:indexPath];
     [KSAlertView showAlertWithTitle:@"提示" message:cell.titleLabel.text cancleButtonTitle:@"取消" otherButtonTitle:@"确定" clickAtIndex:^(NSInteger buttonIndex) {
-        NSLog(@"点击了%@", @(buttonIndex));
+        //NSLog(@"点击了%@", @(buttonIndex));
     }];
 }
 
@@ -82,7 +86,7 @@
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         CGFloat width = (Screen_Width - 50) / 4;
-        layout.itemSize = CGSizeMake(width, width);
+        layout.estimatedItemSize = CGSizeMake(width, width + 200);
         layout.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);
         
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];

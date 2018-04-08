@@ -46,6 +46,11 @@
 + (UIColor *)ks_greenColor;
 
 /**
+ * 红色
+ */
++ (UIColor *)ks_redColor;
+
+/**
  * 根据字符串变成颜色
  */
 + (UIColor *)ks_colorWithString:(NSString *)str;

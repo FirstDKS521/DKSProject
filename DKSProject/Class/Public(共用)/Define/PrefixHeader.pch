@@ -18,8 +18,10 @@
 #import "UIViewController+KSToast.h"
 #import "KSNavigationController.h"
 #import "KSParentController.h"
+#import "UITabBar+KSBrdge.h" //UITabBar显示小红点
 #import "KSCheckWordTool.h" //正则表达式
 #import "UIColor+KSColor.h" //颜色分类
+#import "UIView+KSBrdge.h" //UIView显示小红点
 #import "UIView+KSView.h" //UIView分类，视图添加点击方法、找到当前视图的VC
 #import "KSAlertView.h" //弹框
 

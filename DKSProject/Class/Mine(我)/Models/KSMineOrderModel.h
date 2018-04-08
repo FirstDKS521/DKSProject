@@ -12,5 +12,6 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *imgName;
+@property (nonatomic, assign) NSInteger newCount; //未读消息个数
 
 @end

@@ -10,32 +10,44 @@
 
 @implementation UIColor (KSColor)
 
+//主题颜色
 + (UIColor *)ks_mainColor {
     return [UIColor ks_colorWithString:@"#349B97"];
 }
 
+//title颜色
 + (UIColor *)ks_titleColor {
     return [UIColor colorWithWhite:0.353 alpha:1.000];
 }
 
+//返回按钮颜色
 + (UIColor *)ks_backColor {
     return [UIColor colorWithWhite:0.443 alpha:1.000];
 }
 
+//灰色线条颜色
 + (UIColor *)ks_grayColor {
     return [UIColor ks_colorWithString:@"#EBEBEB"];
 }
 
+//灰色字体颜色
 + (UIColor *)ks_grayTextColor {
     return [UIColor ks_colorWithString:@"#9D9D9D"];
 }
 
+//背景颜色
 + (UIColor *)ks_backgroundColor {
     return [UIColor ks_colorWithString:@"#F2F2F2"];
 }
 
+//绿色
 + (UIColor *)ks_greenColor {
     return [UIColor ks_colorWithString:@"#61B176"];
+}
+
+//红色
++ (UIColor *)ks_redColor {
+    return [UIColor ks_colorWithString:@"#FE0000"];
 }
 
 + (UIColor *)ks_colorWithString:(NSString *)str {

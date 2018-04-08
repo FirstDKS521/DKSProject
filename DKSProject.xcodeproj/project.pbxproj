@@ -36,6 +36,8 @@
 		61AADAFC205D941600C8A720 /* KSMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AADAFB205D941600C8A720 /* KSMessageController.m */; };
 		61AADAFF205D948700C8A720 /* KSMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AADAFE205D948700C8A720 /* KSMineController.m */; };
 		61AADB02205D949A00C8A720 /* KSDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AADB01205D949A00C8A720 /* KSDemoController.m */; };
+		61AF889E207A614800B059BB /* UIView+KSBrdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AF889D207A614800B059BB /* UIView+KSBrdge.m */; };
+		61AF88A1207A616300B059BB /* UITabBar+KSBrdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AF88A0207A616300B059BB /* UITabBar+KSBrdge.m */; };
 		61B57FEB205A5C070068AA4B /* PPNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B57FE8205A5C060068AA4B /* PPNetworkCache.m */; };
 		61B57FEC205A5C070068AA4B /* PPNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B57FEA205A5C060068AA4B /* PPNetworkHelper.m */; };
 		61CADD7E2073CDFF00D9DDFA /* KSMineOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CADD7D2073CDFF00D9DDFA /* KSMineOrderModel.m */; };
@@ -135,6 +137,10 @@
 		61AADAFE205D948700C8A720 /* KSMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSMineController.m; sourceTree = "<group>"; };
 		61AADB00205D949A00C8A720 /* KSDemoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSDemoController.h; sourceTree = "<group>"; };
 		61AADB01205D949A00C8A720 /* KSDemoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSDemoController.m; sourceTree = "<group>"; };
+		61AF889C207A614800B059BB /* UIView+KSBrdge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+KSBrdge.h"; sourceTree = "<group>"; };
+		61AF889D207A614800B059BB /* UIView+KSBrdge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KSBrdge.m"; sourceTree = "<group>"; };
+		61AF889F207A616300B059BB /* UITabBar+KSBrdge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+KSBrdge.h"; sourceTree = "<group>"; };
+		61AF88A0207A616300B059BB /* UITabBar+KSBrdge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+KSBrdge.m"; sourceTree = "<group>"; };
 		61B57FE7205A5C060068AA4B /* PPNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkCache.h; sourceTree = "<group>"; };
 		61B57FE8205A5C060068AA4B /* PPNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkCache.m; sourceTree = "<group>"; };
 		61B57FE9205A5C060068AA4B /* PPNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkHelper.h; sourceTree = "<group>"; };
@@ -605,6 +611,7 @@
 		61855CAE2059304600CA4E03 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				61AF889B207A612300B059BB /* KSRedBadge */,
 				61CADD852073DA0600D9DDFA /* KSAlertView */,
 				6144E2BE206E4F6400BFADA3 /* KSNoDataHint */,
 				6126DC49206A94F400B6C38B /* KSButton */,
@@ -625,6 +632,17 @@
 				61855CB32059304600CA4E03 /* UIView+KSView.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		61AF889B207A612300B059BB /* KSRedBadge */ = {
+			isa = PBXGroup;
+			children = (
+				61AF889C207A614800B059BB /* UIView+KSBrdge.h */,
+				61AF889D207A614800B059BB /* UIView+KSBrdge.m */,
+				61AF889F207A616300B059BB /* UITabBar+KSBrdge.h */,
+				61AF88A0207A616300B059BB /* UITabBar+KSBrdge.m */,
+			);
+			path = KSRedBadge;
 			sourceTree = "<group>";
 		};
 		61B57FE5205A5BF90068AA4B /* ThirdPaths */ = {
@@ -928,9 +946,11 @@
 				61B57FEC205A5C070068AA4B /* PPNetworkHelper.m in Sources */,
 				619B92F6206A5AB700FEAC36 /* KSHomeCollecCell.m in Sources */,
 				61DF39CF205BCD6400D9B78F /* UIViewController+KSToast.m in Sources */,
+				61AF889E207A614800B059BB /* UIView+KSBrdge.m in Sources */,
 				61DF39D3205BD3F100D9B78F /* KSCheckWordTool.m in Sources */,
 				61FFD1DE20735EFE00168D12 /* UIViewController+KSNavBarItem.m in Sources */,
 				616874E9206B98BC0047BDEB /* KSHomeDetailController.m in Sources */,
+				61AF88A1207A616300B059BB /* UITabBar+KSBrdge.m in Sources */,
 				61855CB92059304600CA4E03 /* AppDelegate.m in Sources */,
 				616874EC206BA1A90047BDEB /* KSHomeDetailCell.m in Sources */,
 				61AADAFC205D941600C8A720 /* KSMessageController.m in Sources */,
