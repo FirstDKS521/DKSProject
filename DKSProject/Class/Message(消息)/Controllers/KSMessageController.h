@@ -8,6 +8,6 @@
 
 #import "KSParentController.h"
 
-@interface KSMessageController : KSParentController
+@interface KSMessageController : KSParentController<UITableViewDelegate, UITableViewDataSource>
 
 @end

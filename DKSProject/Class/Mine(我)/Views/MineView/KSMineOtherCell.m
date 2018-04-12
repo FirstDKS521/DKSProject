@@ -10,7 +10,7 @@
 #import "KSMineOrderCell.h"
 #import "KSMineOrderModel.h"
 
-@interface KSMineOtherCell ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface KSMineOtherCell ()<KSMineOrderDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, assign) CGFloat heightED;
@@ -56,9 +56,10 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     KSMineOrderCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    [self updateCollectionViewHeight:collectionView.collectionViewLayout.collectionViewContentSize.height];
+    cell.delegaet = self;
     KSMineOrderModel *model = [KSMineOrderModel modelWithJSON:self.dataSource[indexPath.row]];
     cell.model = model;
+//    [self updateCollectionViewHeight:collectionView.collectionViewLayout.collectionViewContentSize.height];
     return cell;
 }
 
@@ -72,7 +73,7 @@
 - (void)updateCollectionViewHeight:(CGFloat)height {
     if (self.heightED != height) {
         self.heightED = height;
-        self.collectionView.frame = CGRectMake(0, 0, self.collectionView.frame.size.width, height);
+        self.collectionView.frame = CGRectMake(0, 0, self.collectionView.width, height);
         
         if (_delegate && [_delegate respondsToSelector:@selector(updateTableViewCellHeight:andHeight:andIndexPath:)]) {
             [self.delegate updateTableViewCellHeight:self andHeight:height andIndexPath:self.indexPath];
@@ -85,7 +86,7 @@
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-        CGFloat width = (Screen_Width - 50) / 4;
+        CGFloat width = (Screen_Width - 51) / 4;
         layout.estimatedItemSize = CGSizeMake(width, width + 200);
         layout.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);
         

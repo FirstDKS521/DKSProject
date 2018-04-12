@@ -18,6 +18,7 @@
 
 #pragma mark ====== 初始化服务 ======
 - (void)initService {
+    //检测登录状态
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginStateChange:) name:K_LoginStateChange object:nil];
 }
 

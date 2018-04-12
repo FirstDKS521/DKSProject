@@ -34,12 +34,26 @@
     return self;
 }
 
+- (UICollectionViewLayoutAttributes *)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
+//    [self setNeedsLayout];
+//    [self layoutIfNeeded];
+    CGSize size = [self.contentView systemLayoutSizeFittingSize:layoutAttributes.size];
+    CGRect frame = layoutAttributes.frame;
+    frame.size.height = size.height;
+    layoutAttributes.frame = frame;
+    //计算出item的宽高
+    if (self.delegaet && [self.delegaet respondsToSelector:@selector(updateCollectionViewHeight:)]) {
+        [self.delegaet updateCollectionViewHeight:size.height];
+    }
+    return layoutAttributes;
+}
+
 - (void)setModel:(KSMineOrderModel *)model {
     if (model) {
         _model = model;
-        [self layoutIfNeeded];
         _imgView.image = [UIImage imageNamed:model.imgName];
         _titleLabel.text = model.title;
+        [self layoutIfNeeded];
         if (model.newCount > 0) {
             [_imgView showBadgeWithCount:model.newCount];
         } else {

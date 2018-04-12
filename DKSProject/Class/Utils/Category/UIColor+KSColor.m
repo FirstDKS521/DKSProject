@@ -37,7 +37,7 @@
 
 //背景颜色
 + (UIColor *)ks_backgroundColor {
-    return [UIColor ks_colorWithString:@"#F2F2F2"];
+    return [UIColor ks_colorWithString:@"#EBEBEB"];
 }
 
 //绿色

@@ -8,10 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6104962C5F8DCF7FB62A2492 /* libPods-DKSProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E18EC0322DDB4856942C0D19 /* libPods-DKSProject.a */; };
+		611699B9207E34C300587BF6 /* KSChatRTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 611699B8207E34C300587BF6 /* KSChatRTextModel.m */; };
 		611D24B9206BF68E0034E504 /* KSHomeDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 611D24B8206BF68E0034E504 /* KSHomeDetailModel.m */; };
 		6126DC48206A90F500B6C38B /* KSHomeUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6126DC47206A90F500B6C38B /* KSHomeUrl.m */; };
 		6126DC4C206A950F00B6C38B /* KSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6126DC4B206A950F00B6C38B /* KSButton.m */; };
 		6126DC4F206AA0B600B6C38B /* KSHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6126DC4E206AA0B600B6C38B /* KSHomeModel.m */; };
+		612BB82D207B646800FC8033 /* KSMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 612BB82C207B646800FC8033 /* KSMessageModel.m */; };
+		612BB832207B689F00FC8033 /* KSImageRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 612BB831207B689F00FC8033 /* KSImageRadius.m */; };
+		612BB837207B7B8700FC8033 /* KSSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 612BB836207B7B8700FC8033 /* KSSearchBar.m */; };
+		612E02BB207D1C260014B05C /* KSKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 612E02BA207D1C260014B05C /* KSKeyboardView.m */; };
+		612E02BE207D1C510014B05C /* KSChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 612E02BD207D1C510014B05C /* KSChatMoreView.m */; };
+		612E02C1207D1C680014B05C /* KSChatEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 612E02C0207D1C680014B05C /* KSChatEmojiView.m */; };
 		6144E2C3206E4F6F00BFADA3 /* DKSHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6144E2BF206E4F6E00BFADA3 /* DKSHintView.m */; };
 		6144E2C4206E4F6F00BFADA3 /* UIScrollView+HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6144E2C0206E4F6E00BFADA3 /* UIScrollView+HintView.m */; };
 		616874E9206B98BC0047BDEB /* KSHomeDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 616874E8206B98BC0047BDEB /* KSHomeDetailController.m */; };
@@ -38,6 +45,7 @@
 		61AADB02205D949A00C8A720 /* KSDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AADB01205D949A00C8A720 /* KSDemoController.m */; };
 		61AF889E207A614800B059BB /* UIView+KSBrdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AF889D207A614800B059BB /* UIView+KSBrdge.m */; };
 		61AF88A1207A616300B059BB /* UITabBar+KSBrdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AF88A0207A616300B059BB /* UITabBar+KSBrdge.m */; };
+		61AF88A6207A757E00B059BB /* KSMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61AF88A5207A757E00B059BB /* KSMessageCell.m */; };
 		61B57FEB205A5C070068AA4B /* PPNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B57FE8205A5C060068AA4B /* PPNetworkCache.m */; };
 		61B57FEC205A5C070068AA4B /* PPNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 61B57FEA205A5C060068AA4B /* PPNetworkHelper.m */; };
 		61CADD7E2073CDFF00D9DDFA /* KSMineOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61CADD7D2073CDFF00D9DDFA /* KSMineOrderModel.m */; };
@@ -53,7 +61,12 @@
 		61DF39C9205BC17000D9B78F /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61DF39C8205BC17000D9B78F /* images.xcassets */; };
 		61DF39CF205BCD6400D9B78F /* UIViewController+KSToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DF39CE205BCD6400D9B78F /* UIViewController+KSToast.m */; };
 		61DF39D3205BD3F100D9B78F /* KSCheckWordTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DF39D2205BD3F100D9B78F /* KSCheckWordTool.m */; };
+		61EB2E67207BC85D00F87CC5 /* KSChatController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EB2E66207BC85D00F87CC5 /* KSChatController.m */; };
+		61EB2E6A207BCB0A00F87CC5 /* KSChatBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EB2E69207BCB0A00F87CC5 /* KSChatBaseCell.m */; };
+		61EB2E6D207BCB3600F87CC5 /* KSChatRTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EB2E6C207BCB3600F87CC5 /* KSChatRTextCell.m */; };
 		61EBB9BF2075376A00127241 /* KSClearCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 61EBB9BE2075376A00127241 /* KSClearCache.m */; };
+		61F2CA08207E4FC800AC3B1F /* KSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F2CA07207E4FC800AC3B1F /* KSTextView.m */; };
+		61F2CA0B207E6FF400AC3B1F /* KSMsgSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F2CA0A207E6FF400AC3B1F /* KSMsgSearchController.m */; };
 		61FFD1D3207343D500168D12 /* KSTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FFD1D2207343D500168D12 /* KSTableHeaderView.m */; };
 		61FFD1DA20735DFE00168D12 /* KSSetupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FFD1D920735DFE00168D12 /* KSSetupController.m */; };
 		61FFD1DE20735EFE00168D12 /* UIViewController+KSNavBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FFD1DD20735EFE00168D12 /* UIViewController+KSNavBarItem.m */; };
@@ -77,6 +90,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		611699B7207E34C300587BF6 /* KSChatRTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSChatRTextModel.h; sourceTree = "<group>"; };
+		611699B8207E34C300587BF6 /* KSChatRTextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSChatRTextModel.m; sourceTree = "<group>"; };
 		611D24B7206BF68E0034E504 /* KSHomeDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSHomeDetailModel.h; sourceTree = "<group>"; };
 		611D24B8206BF68E0034E504 /* KSHomeDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSHomeDetailModel.m; sourceTree = "<group>"; };
 		6126DC46206A90F500B6C38B /* KSHomeUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSHomeUrl.h; sourceTree = "<group>"; };
@@ -85,6 +100,18 @@
 		6126DC4B206A950F00B6C38B /* KSButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSButton.m; sourceTree = "<group>"; };
 		6126DC4D206AA0B600B6C38B /* KSHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSHomeModel.h; sourceTree = "<group>"; };
 		6126DC4E206AA0B600B6C38B /* KSHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSHomeModel.m; sourceTree = "<group>"; };
+		612BB82B207B646800FC8033 /* KSMessageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSMessageModel.h; sourceTree = "<group>"; };
+		612BB82C207B646800FC8033 /* KSMessageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSMessageModel.m; sourceTree = "<group>"; };
+		612BB830207B689F00FC8033 /* KSImageRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSImageRadius.h; sourceTree = "<group>"; };
+		612BB831207B689F00FC8033 /* KSImageRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSImageRadius.m; sourceTree = "<group>"; };
+		612BB835207B7B8700FC8033 /* KSSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSSearchBar.h; sourceTree = "<group>"; };
+		612BB836207B7B8700FC8033 /* KSSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSSearchBar.m; sourceTree = "<group>"; };
+		612E02B9207D1C260014B05C /* KSKeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSKeyboardView.h; sourceTree = "<group>"; };
+		612E02BA207D1C260014B05C /* KSKeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSKeyboardView.m; sourceTree = "<group>"; };
+		612E02BC207D1C510014B05C /* KSChatMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSChatMoreView.h; sourceTree = "<group>"; };
+		612E02BD207D1C510014B05C /* KSChatMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSChatMoreView.m; sourceTree = "<group>"; };
+		612E02BF207D1C680014B05C /* KSChatEmojiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSChatEmojiView.h; sourceTree = "<group>"; };
+		612E02C0207D1C680014B05C /* KSChatEmojiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSChatEmojiView.m; sourceTree = "<group>"; };
 		6144E2BF206E4F6E00BFADA3 /* DKSHintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKSHintView.m; sourceTree = "<group>"; };
 		6144E2C0206E4F6E00BFADA3 /* UIScrollView+HintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HintView.m"; sourceTree = "<group>"; };
 		6144E2C1206E4F6E00BFADA3 /* DKSHintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKSHintView.h; sourceTree = "<group>"; };
@@ -141,6 +168,8 @@
 		61AF889D207A614800B059BB /* UIView+KSBrdge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+KSBrdge.m"; sourceTree = "<group>"; };
 		61AF889F207A616300B059BB /* UITabBar+KSBrdge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+KSBrdge.h"; sourceTree = "<group>"; };
 		61AF88A0207A616300B059BB /* UITabBar+KSBrdge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+KSBrdge.m"; sourceTree = "<group>"; };
+		61AF88A4207A757E00B059BB /* KSMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSMessageCell.h; sourceTree = "<group>"; };
+		61AF88A5207A757E00B059BB /* KSMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSMessageCell.m; sourceTree = "<group>"; };
 		61B57FE7205A5C060068AA4B /* PPNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkCache.h; sourceTree = "<group>"; };
 		61B57FE8205A5C060068AA4B /* PPNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkCache.m; sourceTree = "<group>"; };
 		61B57FE9205A5C060068AA4B /* PPNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkHelper.h; sourceTree = "<group>"; };
@@ -170,8 +199,18 @@
 		61DF39CE205BCD6400D9B78F /* UIViewController+KSToast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KSToast.m"; sourceTree = "<group>"; };
 		61DF39D1205BD3F100D9B78F /* KSCheckWordTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCheckWordTool.h; sourceTree = "<group>"; };
 		61DF39D2205BD3F100D9B78F /* KSCheckWordTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCheckWordTool.m; sourceTree = "<group>"; };
+		61EB2E65207BC85D00F87CC5 /* KSChatController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSChatController.h; sourceTree = "<group>"; };
+		61EB2E66207BC85D00F87CC5 /* KSChatController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSChatController.m; sourceTree = "<group>"; };
+		61EB2E68207BCB0A00F87CC5 /* KSChatBaseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSChatBaseCell.h; sourceTree = "<group>"; };
+		61EB2E69207BCB0A00F87CC5 /* KSChatBaseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSChatBaseCell.m; sourceTree = "<group>"; };
+		61EB2E6B207BCB3600F87CC5 /* KSChatRTextCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSChatRTextCell.h; sourceTree = "<group>"; };
+		61EB2E6C207BCB3600F87CC5 /* KSChatRTextCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSChatRTextCell.m; sourceTree = "<group>"; };
 		61EBB9BD2075376A00127241 /* KSClearCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSClearCache.h; sourceTree = "<group>"; };
 		61EBB9BE2075376A00127241 /* KSClearCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSClearCache.m; sourceTree = "<group>"; };
+		61F2CA06207E4FC800AC3B1F /* KSTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSTextView.h; sourceTree = "<group>"; };
+		61F2CA07207E4FC800AC3B1F /* KSTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSTextView.m; sourceTree = "<group>"; };
+		61F2CA09207E6FF400AC3B1F /* KSMsgSearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSMsgSearchController.h; sourceTree = "<group>"; };
+		61F2CA0A207E6FF400AC3B1F /* KSMsgSearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSMsgSearchController.m; sourceTree = "<group>"; };
 		61FFD1D1207343D500168D12 /* KSTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSTableHeaderView.h; sourceTree = "<group>"; };
 		61FFD1D2207343D500168D12 /* KSTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSTableHeaderView.m; sourceTree = "<group>"; };
 		61FFD1D820735DFE00168D12 /* KSSetupController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSSetupController.h; sourceTree = "<group>"; };
@@ -233,6 +272,39 @@
 				6126DC4B206A950F00B6C38B /* KSButton.m */,
 			);
 			path = KSButton;
+			sourceTree = "<group>";
+		};
+		612BB82E207B680800FC8033 /* KSImageRadius */ = {
+			isa = PBXGroup;
+			children = (
+				612BB830207B689F00FC8033 /* KSImageRadius.h */,
+				612BB831207B689F00FC8033 /* KSImageRadius.m */,
+			);
+			path = KSImageRadius;
+			sourceTree = "<group>";
+		};
+		612BB834207B774C00FC8033 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				612BB835207B7B8700FC8033 /* KSSearchBar.h */,
+				612BB836207B7B8700FC8033 /* KSSearchBar.m */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		612E02B8207D1B060014B05C /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				612E02B9207D1C260014B05C /* KSKeyboardView.h */,
+				612E02BA207D1C260014B05C /* KSKeyboardView.m */,
+				61F2CA06207E4FC800AC3B1F /* KSTextView.h */,
+				61F2CA07207E4FC800AC3B1F /* KSTextView.m */,
+				612E02BC207D1C510014B05C /* KSChatMoreView.h */,
+				612E02BD207D1C510014B05C /* KSChatMoreView.m */,
+				612E02BF207D1C680014B05C /* KSChatEmojiView.h */,
+				612E02C0207D1C680014B05C /* KSChatEmojiView.m */,
+			);
+			path = KeyBoard;
 			sourceTree = "<group>";
 		};
 		6144E2BE206E4F6400BFADA3 /* KSNoDataHint */ = {
@@ -490,6 +562,10 @@
 			children = (
 				61AADAFA205D941600C8A720 /* KSMessageController.h */,
 				61AADAFB205D941600C8A720 /* KSMessageController.m */,
+				61EB2E65207BC85D00F87CC5 /* KSChatController.h */,
+				61EB2E66207BC85D00F87CC5 /* KSChatController.m */,
+				61F2CA09207E6FF400AC3B1F /* KSMsgSearchController.h */,
+				61F2CA0A207E6FF400AC3B1F /* KSMsgSearchController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -497,6 +573,10 @@
 		61855C992059304600CA4E03 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				612BB82B207B646800FC8033 /* KSMessageModel.h */,
+				612BB82C207B646800FC8033 /* KSMessageModel.m */,
+				611699B7207E34C300587BF6 /* KSChatRTextModel.h */,
+				611699B8207E34C300587BF6 /* KSChatRTextModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -504,6 +584,10 @@
 		61855C9A2059304600CA4E03 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				612E02B8207D1B060014B05C /* KeyBoard */,
+				612BB834207B774C00FC8033 /* SearchView */,
+				61AF88A3207A756600B059BB /* MsgView */,
+				61AF88A2207A756600B059BB /* ChatView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -611,6 +695,7 @@
 		61855CAE2059304600CA4E03 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				612BB82E207B680800FC8033 /* KSImageRadius */,
 				61AF889B207A612300B059BB /* KSRedBadge */,
 				61CADD852073DA0600D9DDFA /* KSAlertView */,
 				6144E2BE206E4F6400BFADA3 /* KSNoDataHint */,
@@ -643,6 +728,26 @@
 				61AF88A0207A616300B059BB /* UITabBar+KSBrdge.m */,
 			);
 			path = KSRedBadge;
+			sourceTree = "<group>";
+		};
+		61AF88A2207A756600B059BB /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				61EB2E68207BCB0A00F87CC5 /* KSChatBaseCell.h */,
+				61EB2E69207BCB0A00F87CC5 /* KSChatBaseCell.m */,
+				61EB2E6B207BCB3600F87CC5 /* KSChatRTextCell.h */,
+				61EB2E6C207BCB3600F87CC5 /* KSChatRTextCell.m */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		61AF88A3207A756600B059BB /* MsgView */ = {
+			isa = PBXGroup;
+			children = (
+				61AF88A4207A757E00B059BB /* KSMessageCell.h */,
+				61AF88A5207A757E00B059BB /* KSMessageCell.m */,
+			);
+			path = MsgView;
 			sourceTree = "<group>";
 		};
 		61B57FE5205A5BF90068AA4B /* ThirdPaths */ = {
@@ -911,11 +1016,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				61855CB82059304600CA4E03 /* AppDelegate+AppService.m in Sources */,
+				612BB837207B7B8700FC8033 /* KSSearchBar.m in Sources */,
 				61FFD1DA20735DFE00168D12 /* KSSetupController.m in Sources */,
 				619B92FC206A5B0600FEAC36 /* KSHomeHeadView.m in Sources */,
 				61CC90412074C1E4003258FD /* KSMineFirstCell.m in Sources */,
+				61F2CA08207E4FC800AC3B1F /* KSTextView.m in Sources */,
 				61855CBE2059304600CA4E03 /* UIColor+KSColor.m in Sources */,
 				61CC90452074C1E4003258FD /* KSMineOtherCell.m in Sources */,
+				612BB832207B689F00FC8033 /* KSImageRadius.m in Sources */,
 				61855CBC2059304600CA4E03 /* KSParentController.m in Sources */,
 				6126DC4F206AA0B600B6C38B /* KSHomeModel.m in Sources */,
 				61855CBA2059304600CA4E03 /* KSLoginController.m in Sources */,
@@ -924,23 +1032,31 @@
 				61CADD7E2073CDFF00D9DDFA /* KSMineOrderModel.m in Sources */,
 				61CC90422074C1E4003258FD /* KSMineHeadView.m in Sources */,
 				61855CBF2059304600CA4E03 /* UIView+KSView.m in Sources */,
+				611699B9207E34C300587BF6 /* KSChatRTextModel.m in Sources */,
 				61CC90402074C1E4003258FD /* KSMineCell.m in Sources */,
+				61EB2E6D207BCB3600F87CC5 /* KSChatRTextCell.m in Sources */,
 				61FFD1D3207343D500168D12 /* KSTableHeaderView.m in Sources */,
 				6126DC48206A90F500B6C38B /* KSHomeUrl.m in Sources */,
 				6144E2C4206E4F6F00BFADA3 /* UIScrollView+HintView.m in Sources */,
 				61CADD882073DA7100D9DDFA /* KSAlertView.m in Sources */,
 				61AADAF9205D93FC00C8A720 /* KSHomeController.m in Sources */,
+				612E02BB207D1C260014B05C /* KSKeyboardView.m in Sources */,
 				61CC90432074C1E4003258FD /* KSMineNavView.m in Sources */,
 				61AADB02205D949A00C8A720 /* KSDemoController.m in Sources */,
 				61CC90442074C1E4003258FD /* KSMineOrderCell.m in Sources */,
+				61AF88A6207A757E00B059BB /* KSMessageCell.m in Sources */,
 				61B57FEB205A5C070068AA4B /* PPNetworkCache.m in Sources */,
+				612BB82D207B646800FC8033 /* KSMessageModel.m in Sources */,
 				61EBB9BF2075376A00127241 /* KSClearCache.m in Sources */,
 				61AADAFF205D948700C8A720 /* KSMineController.m in Sources */,
+				61F2CA0B207E6FF400AC3B1F /* KSMsgSearchController.m in Sources */,
 				61855CBB2059304600CA4E03 /* KSNavigationController.m in Sources */,
 				6126DC4C206A950F00B6C38B /* KSButton.m in Sources */,
 				6144E2C3206E4F6F00BFADA3 /* DKSHintView.m in Sources */,
 				611D24B9206BF68E0034E504 /* KSHomeDetailModel.m in Sources */,
+				61EB2E6A207BCB0A00F87CC5 /* KSChatBaseCell.m in Sources */,
 				619B92F9206A5AD100FEAC36 /* KSHomeTableCell.m in Sources */,
+				612E02BE207D1C510014B05C /* KSChatMoreView.m in Sources */,
 				61CC90482074C235003258FD /* KSSetupCell.m in Sources */,
 				61855C5D20592DF800CA4E03 /* main.m in Sources */,
 				61B57FEC205A5C070068AA4B /* PPNetworkHelper.m in Sources */,
@@ -949,8 +1065,10 @@
 				61AF889E207A614800B059BB /* UIView+KSBrdge.m in Sources */,
 				61DF39D3205BD3F100D9B78F /* KSCheckWordTool.m in Sources */,
 				61FFD1DE20735EFE00168D12 /* UIViewController+KSNavBarItem.m in Sources */,
+				61EB2E67207BC85D00F87CC5 /* KSChatController.m in Sources */,
 				616874E9206B98BC0047BDEB /* KSHomeDetailController.m in Sources */,
 				61AF88A1207A616300B059BB /* UITabBar+KSBrdge.m in Sources */,
+				612E02C1207D1C680014B05C /* KSChatEmojiView.m in Sources */,
 				61855CB92059304600CA4E03 /* AppDelegate.m in Sources */,
 				616874EC206BA1A90047BDEB /* KSHomeDetailCell.m in Sources */,
 				61AADAFC205D941600C8A720 /* KSMessageController.m in Sources */,

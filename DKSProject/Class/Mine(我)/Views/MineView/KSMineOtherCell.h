@@ -18,7 +18,7 @@
 
 @end
 
-@interface KSMineOtherCell : UITableViewCell
+@interface KSMineOtherCell : UITableViewCell<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, weak) id <KSOtherDelegate>delegate;
 @property (nonatomic, strong) NSIndexPath *indexPath;

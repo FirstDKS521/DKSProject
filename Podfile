@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-inhibit_all_warnings!
+inhibit_all_warnings! #解决三方库中的警告
 platform :ios, '8.0'
 
 target 'DKSProject' do

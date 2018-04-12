@@ -92,4 +92,16 @@ NSString const *blockTapKey = @"tapKey";
     leftField.leftViewMode = UITextFieldViewModeAlways;
 }
 
+#pragma mark ====== 设置行间距 ======
+- (void)setLabelLineSpacing:(CGFloat)space label:(UILabel *)label textStr:(NSString *)str {
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:str];
+    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    style.lineSpacing = space;
+    NSDictionary *dic = @{NSParagraphStyleAttributeName:style,
+                          NSFontAttributeName:label.font,
+                          NSStrokeColorAttributeName:label.textColor};
+    [attributedString setAttributes:dic range:NSMakeRange(0, str.length)];
+    label.attributedText = attributedString;
+}
+
 @end

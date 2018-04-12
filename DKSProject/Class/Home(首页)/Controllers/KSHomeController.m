@@ -167,7 +167,9 @@
 
 //当拖动CollectionView的时候，处理TableView
 - (void)selectRowAtIndexPath:(NSInteger)index {
-    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+    if (self.dataAry) {
+        [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] animated:NO scrollPosition:UITableViewScrollPositionMiddle];
+    }
 }
 
 #pragma mark ====== UIScrollViewDelegate ======

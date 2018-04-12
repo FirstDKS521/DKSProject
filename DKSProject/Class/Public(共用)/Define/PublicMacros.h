@@ -30,13 +30,13 @@
 //获取屏幕的宽度和高度
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 #define Screen_Height [UIScreen mainScreen].bounds.size.height
-
 //判断是否是iPhoneX
 #define isIphoneX (Screen_Width == 375.f && Screen_Height == 812.f ? YES : NO)
 //状态栏和导航栏的总高度
 #define StatusNav_Height (isIphoneX ? 88 : 64)
+#define Nav_Height 44
 //状态栏高度
-#define StatusBar_Height (isIphoneX ? 44 : 20)
+#define StatusBar_Height (isIphoneX ? Nav_Height : 20)
 //TabBar的高度
 #define TabBar_Height ([[UIApplication sharedApplication] statusBarFrame].size.height > 20 ? 83 : 49)
 

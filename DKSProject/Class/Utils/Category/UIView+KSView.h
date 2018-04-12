@@ -48,4 +48,12 @@
  */
 - (void)textFieldLeftView:(UITextField *)leftField;
 
+/**
+ 设置UILabel的行间距
+ @param space 间距大小
+ @param label UILabel类型的label
+ @param str 需要设置的文案
+ */
+- (void)setLabelLineSpacing:(CGFloat)space label:(UILabel *)label textStr:(NSString *)str;
+
 @end
